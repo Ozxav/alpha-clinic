@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ألفا كلينك | عيادة أسنان في الرياض</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4faf9;--card:#fff;--ink:#0d2b2e;--mute:#587174;--brand:#0e9f8e;--brand2:#2bb3e8;--line:#d7e8e6;--h1:#0a3d44;--h2:#0e9f8e;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(env(safe-area-inset-bottom,0px) + 70px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071618;--card:#0d2528;--ink:#e8f5f4;--mute:#8cadb0;--line:#1a3d42;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#071618;--card:#0d2528;--ink:#e8f5f4;--mute:#8cadb0;--line:#1a3d42;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,system-ui,sans-serif;line-height:1.8}
+.wrap{max-width:1000px;margin:auto;padding:0 20px}
+.note{background:#fff3cd;color:#664d03;text-align:center;font-size:13px;padding:6px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--h1);color:#fff}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font-size:19px;font-weight:800}
+nav a{color:#bfe6e1;text-decoration:none;margin-inline-start:18px;font-size:15px}
+.hero{background:linear-gradient(135deg,var(--h1),var(--h2));color:#fff;padding:60px 0 100px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:4px 14px;border-radius:999px;font-size:14px;margin-bottom:14px}
+h1{font-size:clamp(30px,5.5vw,50px);line-height:1.25;margin:0 0 14px;font-weight:800}
+.hero p{font-size:18px;color:#d3f1ed;margin:0 0 24px;max-width:460px}
+.btn{display:inline-block;font-weight:800;padding:13px 26px;border-radius:14px;text-decoration:none;margin:4px 0 4px 8px}
+.btn.p{background:#fff;color:#075a52}
+.btn.s{border:2px solid rgba(255,255,255,.55);color:#fff}
+.tooth{width:100%;max-width:300px;justify-self:center;filter:drop-shadow(0 18px 28px rgba(0,0,0,.3))}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-50px;position:relative}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;box-shadow:0 10px 30px rgba(10,80,80,.08)}
+.stat b{display:block;font-size:27px;color:var(--brand);font-weight:800}
+.stat span{color:var(--mute);font-size:14px}
+section{padding:52px 0 0}
+h2{text-align:center;font-size:29px;margin:0 0 6px;font-weight:800}
+.sub{text-align:center;color:var(--mute);margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--brand)}
+.ic{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:22px;margin-bottom:10px}
+.card h3{margin:0 0 4px;font-size:18px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.dr{text-align:center}
+.av{width:72px;height:72px;border-radius:50%;margin:0 auto 10px;background:var(--line);display:grid;place-items:center;font-size:30px}
+.bk{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;max-width:580px;margin:auto}
+.bk label{display:block;font-weight:700;margin:10px 0 4px}
+.bk input,.bk select{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.bk button{width:100%;margin-top:16px;padding:14px;border:0;border-radius:14px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font:inherit;font-weight:800;cursor:pointer}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:8px 0 0;color:var(--mute)}
+.loc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;text-align:center}
+.loc a{color:var(--brand);font-weight:800;text-decoration:none}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:34px 0 12px}
+.bar{position:fixed;bottom:0;inset-inline:0;z-index:6;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line)}
+.bar a{flex:1;text-align:center;padding:12px;border-radius:12px;font-weight:800;text-decoration:none}
+.bar .c{background:var(--brand);color:#fff}.bar .w{background:#25d366;color:#05310f}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr}.tooth{max-width:180px}nav a{display:none}.stat b{font-size:20px}.stat{padding:12px 4px}}
+</style>
+</head>
+<body>
+<div class="note">نموذج تصميم مقترح لألفا كلينك. الخدمات والأطباء والصور تتعدل حسب العيادة</div>
+<nav><div class="wrap"><b>ألفا كلينك</b><div><a href="#services">الخدمات</a><a href="#team">الأطباء</a><a href="#book">احجز</a><a href="#faq">أسئلة</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<span class="badge">⭐ ٤٫٨ على خرائط قوقل · ٦٠٠+ تقييم</span>
+<h1>ابتسامتك تستاهل عناية تثق فيها</h1>
+<p>عيادة أسنان في حي المروج بالرياض. فريق ودود، وحجز بدقيقة من جوالك.</p>
+<a class="btn p" href="#book">احجز موعدك</a>
+<a class="btn s" href="tel:+966536351147">اتصل بنا</a>
+</div>
+<svg class="tooth" viewBox="0 0 200 220" aria-label="سن"><defs><linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#cdeeea"/></linearGradient></defs><path d="M100 24c-22-16-62-10-66 32-3 30 14 40 18 76 3 26 8 54 22 54 12 0 12-36 26-36s14 36 26 36c14 0 19-28 22-54 4-36 21-46 18-76-4-42-44-48-66-32z" fill="url(#t)"/><path d="M70 60c8-8 22-10 32-4" stroke="#9fd8d1" stroke-width="6" fill="none" stroke-linecap="round"/><g fill="#fff"><circle cx="170" cy="30" r="7"/><circle cx="188" cy="52" r="4"/><circle cx="24" cy="40" r="5"/></g></svg>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30c240 40 480 40 720 10s480-30 720 10v10H0z" fill="var(--bg)"/></svg>
+</header>
+
+<main class="wrap">
+<div class="stats">
+<div class="stat"><b>٤٫٨ ★</b><span>تقييم قوقل</span></div>
+<div class="stat"><b>+٦٠٠</b><span>تقييم مريض</span></div>
+<div class="stat"><b>٩ص–٩م</b><span>كل أيام الأسبوع</span></div>
+</div>
+
+<section id="services"><h2>خدماتنا</h2><p class="sub">رعاية شاملة لأسنان العائلة</p>
+<div class="grid">
+<div class="card"><div class="ic">🦷</div><h3>فحص وتنظيف</h3><p>فحص دوري وتنظيف يحافظ على صحة اللثة والأسنان.</p></div>
+<div class="card"><div class="ic">🩹</div><h3>حشوات وعلاج</h3><p>علاج التسوس والحشوات التجميلية بلون السن.</p></div>
+<div class="card"><div class="ic">✨</div><h3>تجميل الأسنان</h3><p>تبييض وتحسين الابتسامة بخيارات مناسبة لك.</p></div>
+<div class="card"><div class="ic">😁</div><h3>تقويم وزراعة</h3><p>خطة علاج واضحة بعد الفحص والاستشارة.</p></div>
+</div></section>
+
+<section id="team"><h2>أطباؤنا</h2><p class="sub">يُضاف هنا اسم كل طبيب وتخصصه وصورته</p>
+<div class="grid">
+<div class="card dr"><div class="av">👩‍⚕️</div><h3>د. [اسم الطبيب]</h3><p>[التخصص]</p></div>
+<div class="card dr"><div class="av">👨‍⚕️</div><h3>د. [اسم الطبيب]</h3><p>[التخصص]</p></div>
+<div class="card dr"><div class="av">👩‍⚕️</div><h3>د. [اسم الطبيب]</h3><p>[التخصص]</p></div>
+</div></section>
+
+<section id="book"><h2>احجز موعدك</h2><p class="sub">عبّي البيانات ويوصل طلبك لاستقبال العيادة على واتساب</p>
+<div class="bk">
+<label for="n">الاسم</label><input id="n" placeholder="اسمك الكريم">
+<label for="s">نوع الزيارة</label><select id="s"><option>كشف واستشارة</option><option>تنظيف أسنان</option><option>حشوة / علاج</option><option>تجميل / تبييض</option><option>تقويم</option><option>حالة طارئة (ألم)</option></select>
+<label for="d">اليوم المفضل</label><input id="d" type="date">
+<label for="t">الفترة</label><select id="t"><option>صباحاً (٩–١٢)</option><option>ظهراً (١٢–٤)</option><option>مساءً (٤–٩)</option></select>
+<button id="b" type="button">أرسل طلب الحجز على واتساب</button>
+</div></section>
+
+<section id="faq"><h2>أسئلة شائعة</h2><p class="sub">&nbsp;</p>
+<details><summary>هل أحتاج موعد مسبق؟</summary><p>يفضل الحجز مسبقاً لضمان الوقت المناسب، ويمكنك الحجز من الموقع أو واتساب.</p></details>
+<details><summary>متى ساعات الدوام؟</summary><p>من ٩ صباحاً إلى ٩ مساءً طوال أيام الأسبوع.</p></details>
+<details><summary>وش أسوي لو عندي ألم مفاجئ؟</summary><p>اختر "حالة طارئة" في نموذج الحجز أو اتصل بنا مباشرة.</p></details>
+</section>
+
+<section><div class="loc"><h2>موقعنا</h2><p>حي المروج، الرياض · ٩ص – ٩م<br><a href="tel:+966536351147">٠٥٣ ٦٣٥ ١١٤٧</a></p></div></section>
+<footer>© ألفا كلينك · تصميم تجريبي</footer>
+</main>
+<div class="bar"><a class="c" href="tel:+966536351147">اتصل</a><a class="w" href="https://wa.me/966536351147">واتساب</a></div>
+<script>
+document.getElementById('b').addEventListener('click',function(){
+var g=function(i){return document.getElementById(i).value.trim()};
+var m='السلام عليكم، أبغى أحجز موعد في ألفا كلينك.\nالاسم: '+(g('n')||'-')+'\nنوع الزيارة: '+g('s')+'\nاليوم المفضل: '+(g('d')||'-')+'\nالفترة: '+g('t');
+window.open('https://wa.me/966536351147?text='+encodeURIComponent(m),'_blank');
+});
+</script>
+</body>
+</html>
